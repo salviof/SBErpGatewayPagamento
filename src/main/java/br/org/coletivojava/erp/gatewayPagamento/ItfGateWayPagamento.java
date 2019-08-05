@@ -7,6 +7,7 @@ package br.org.coletivojava.erp.gatewayPagamento;
 
 import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.ItfResposta;
 import java.util.Date;
+import java.util.Map;
 
 /**
  *
@@ -16,11 +17,13 @@ public interface ItfGateWayPagamento {
 
     public ItfResposta gerarTokenAcesso(ItfCartaoDeCredito pCartao);
 
-    public ItfResposta autorizarECapturarTransacaoComToken(double pValor, String pCodigoPedido, ItfCartaoDeCredito pCartao, String pDigitoVerificador);
+    public ItfResposta autorizarECapturarTransacaoComToken(double pValor, String pCodigoPedido, ItfCartaoDeCredito pCartao, String pDigitoVerificador, Map<String, String> dadoscomplementares);
 
     public ItfResposta autorizarTransacaoComToken(double pValor, String pCodigoPedido, ItfCartaoDeCredito pCartao, String pDigitoVerificador);
 
     public ItfResposta autorizarTransacaoFuturaComToken(Date pDataHora, double valor, String pCodigoPedido, String nomeUsuarioCartao, double pValorCompra, String pToken, String digitoVerificador, String pbandeira);
+
+    public ItfResposta autorizarECapturarTransacaoComDadosTransiente(double pValor, String pCodigoPedido, ItfCartaoCreditoDadosTransientAntiFraude pCartao);
 
     public ItfResposta cancelarTransacao(String token);
 
