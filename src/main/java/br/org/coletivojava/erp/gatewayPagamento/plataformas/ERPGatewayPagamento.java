@@ -23,6 +23,8 @@ public enum ERPGatewayPagamento implements ItfApiErpSuperBits<ItfGateWayPagament
     PAGUE_SEGURO,
     @InfoObjetoDaFabrica(nomeObjeto = "Bitcoin", classeObjeto = PlataformaGatewayPagamento.class)
     BIT_COINS,
+    @InfoObjetoDaFabrica(nomeObjeto = "Rede", classeObjeto = PlataformaGatewayPagamento.class)
+    REDE,
     /**
      * O Modo automático se vira para encontrar o usuário, exemplo: se tiver uma
      * sessao do usuário conectada envia via modal, se não encontrar, tenta
@@ -32,12 +34,18 @@ public enum ERPGatewayPagamento implements ItfApiErpSuperBits<ItfGateWayPagament
     AUTOMATICO;
 
     @Override
+    public Object getRegistro() {
+        return ItfApiErpSuperBits.super.getRegistro(); //chamada super do metodo (implementação classe pai)
+    }
+
+    @Override
     public ItfGateWayPagamento getImplementacaoDoContexto() {
         return (ItfGateWayPagamento) UtilSBCoreReflexaoAPIERP.getImplementacaoDoContexto(this);
     }
 
     @Override
     public Class getInterface() {
+
         return ItfGateWayPagamento.class;
 
     }

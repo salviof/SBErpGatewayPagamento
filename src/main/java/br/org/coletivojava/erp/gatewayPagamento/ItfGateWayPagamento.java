@@ -23,11 +23,15 @@ public interface ItfGateWayPagamento {
 
     public ItfResposta autorizarTransacaoFuturaComToken(Date pDataHora, double valor, String pCodigoPedido, String nomeUsuarioCartao, double pValorCompra, String pToken, String digitoVerificador, String pbandeira);
 
-    public ItfResposta autorizarECapturarTransacaoComDadosTransiente(double pValor, String pCodigoPedido, ItfCartaoCreditoDadosTransientAntiFraude pCartao);
+    public ItfResposta autorizarECapturarTransacaoComDadosTransiente(double pValor, String pCodigoPedido, ItfCartaoCreditoDadosTransient pCartao);
 
     public ItfResposta cancelarTransacao(String token);
 
-    public ItfResposta capturarTransacao(String pCodigoTransacao);
+    public ItfResposta capturarTransacao(String pCodigoTransacao, Double pValor);
+
+    public default ItfResposta capturarTransacao(String pCodigoTransacao) {
+        return capturarTransacao(pCodigoTransacao, null);
+    }
 
     public ItfResposta obterDadosTransacao(String pCodigoTransacao);
 
