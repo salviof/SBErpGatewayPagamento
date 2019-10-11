@@ -18,4 +18,10 @@ public interface ItfCartaoCreditoDadosTransient extends ItfCartaoDeCredito {
 
     public String getDigitoVerificador();
 
+    public void setNumeroCartao(String numero);
+
+    public void setNomeUsuarioCartao(String pnome);
+
+    public void setDigitoVerificador(String pDigito);
+
 }

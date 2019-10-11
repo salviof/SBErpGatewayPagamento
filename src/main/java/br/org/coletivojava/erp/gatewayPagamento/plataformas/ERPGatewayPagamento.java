@@ -4,6 +4,8 @@
  */
 package br.org.coletivojava.erp.gatewayPagamento.plataformas;
 
+import br.org.coletivojava.erp.gatewayPagamento.ItfCartaoCreditoDadosTransient;
+import br.org.coletivojava.erp.gatewayPagamento.ItfCartaoCreditoDadosTransientAntiFraude;
 import br.org.coletivojava.erp.gatewayPagamento.ItfGateWayPagamento;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
