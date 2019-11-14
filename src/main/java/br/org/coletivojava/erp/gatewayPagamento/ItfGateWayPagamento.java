@@ -25,7 +25,7 @@ public interface ItfGateWayPagamento {
 
     public ItfResposta autorizarECapturarTransacaoComDadosTransiente(double pValor, String pCodigoPedido, ItfCartaoCreditoDadosTransient pCartao);
 
-    public ItfResposta cancelarTransacao(String token);
+    public ItfResposta cancelarTransacao(String pCodigoTransacao, Double pValor);
 
     public ItfResposta capturarTransacao(String pCodigoTransacao, Double pValor);
 
