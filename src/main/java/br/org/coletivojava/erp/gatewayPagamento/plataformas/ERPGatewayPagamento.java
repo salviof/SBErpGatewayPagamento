@@ -27,6 +27,8 @@ public enum ERPGatewayPagamento implements ItfApiErpSuperBits<ItfGateWayPagament
     BIT_COINS,
     @InfoObjetoDaFabrica(nomeObjeto = "Rede", classeObjeto = PlataformaGatewayPagamento.class)
     REDE,
+    @InfoObjetoDaFabrica(nomeObjeto = "Simulacao", classeObjeto = PlataformaGatewayPagamento.class)
+    SIMULACAO,
     /**
      * O Modo automático se vira para encontrar o usuário, exemplo: se tiver uma
      * sessao do usuário conectada envia via modal, se não encontrar, tenta
