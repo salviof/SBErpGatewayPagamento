@@ -17,7 +17,7 @@ import com.super_bits.modulosSB.SBCore.modulos.objetos.InfoCampos.campo.FabTipoA
 public class PlataformaGatewayPagamento {
 
     @InfoCampo(tipo = FabTipoAtributoObjeto.ID)
-    private int id;
+    private Long id;
     @InfoCampo(tipo = FabTipoAtributoObjeto.NOME)
     private String nome;
     @InfoCampo(tipo = FabTipoAtributoObjeto.DESCRITIVO)
@@ -25,11 +25,11 @@ public class PlataformaGatewayPagamento {
     @InfoCampo(tipo = FabTipoAtributoObjeto.SITE)
     private String url;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
