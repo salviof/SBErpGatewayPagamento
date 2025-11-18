@@ -6,14 +6,14 @@
 package br.org.coletivojava.erp.gatewayPagamento;
 
 import br.org.coletivojava.erp.gatewayPagamento.bandeira.ItfBandeiraCartao;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfBeanSimples;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ComoEntidadeSimples;
 import java.util.Date;
 
 /**
  *
  * @author novy
  */
-public interface ItfCartaoDeCredito extends ItfBeanSimples {
+public interface ItfCartaoDeCredito extends ComoEntidadeSimples {
 
     public String getToken();
 

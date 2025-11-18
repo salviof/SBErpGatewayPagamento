@@ -5,7 +5,7 @@
  */
 package br.org.coletivojava.erp.gatewayPagamento;
 
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.financeiro.ItfPessoaFisicoJuridico;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.financeiro.ComoPessoaFisicoJuridico;
 import java.util.Date;
 
 /**
@@ -13,7 +13,7 @@ import java.util.Date;
  * @since 21/07/2019
  * @version 1.0
  */
-public interface ItfCartaoDeCreditoAntiFraude extends ItfPessoaFisicoJuridico {
+public interface ItfCartaoDeCreditoAntiFraude extends ComoPessoaFisicoJuridico {
 
     public Date getAniversario();
 

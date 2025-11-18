@@ -5,15 +5,14 @@
  */
 package br.org.coletivojava.erp.gatewayPagamento;
 
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.financeiro.ItfPessoaFisicoJuridico;
-import java.util.Date;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.financeiro.ComoPessoaFisicoJuridico;
 
 /**
  * @author salviofurbino
  * @since 18/07/2019
  * @version 1.0
  */
-public interface ItfCartaoCreditoDadosTransientAntiFraude extends ItfCartaoCreditoDadosTransient, ItfPessoaFisicoJuridico {
+public interface ItfCartaoCreditoDadosTransientAntiFraude extends ItfCartaoCreditoDadosTransient, ComoPessoaFisicoJuridico {
 
     public String getHashComprador();
 
