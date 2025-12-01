@@ -10,7 +10,7 @@ import br.org.coletivojava.erp.gatewayPagamento.ItfGateWayPagamento;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.InfoCampos.anotacoes.InfoObjetoDaFabrica;
-import org.coletivojava.fw.utilCoreBase.UtilSBCoreReflexaoAPIERP;
+import org.coletivojava.fw.utilCoreBase.UtilCRCReflexaoAPIERP;
 
 /**
  *
@@ -44,7 +44,7 @@ public enum ERPGatewayPagamento implements ItfApiErpSuperBits<ItfGateWayPagament
 
     @Override
     public ItfGateWayPagamento getImplementacaoDoContexto() {
-        return (ItfGateWayPagamento) UtilSBCoreReflexaoAPIERP.getImplementacaoDoContexto(this);
+        return (ItfGateWayPagamento) UtilCRCReflexaoAPIERP.getImplementacaoDoContexto(this);
     }
 
     @Override
