@@ -5,7 +5,7 @@
  */
 package br.org.coletivojava.erp.gatewayPagamento;
 
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.financeiro.ComoPessoaFisicoJuridico;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.financeiro.ComoPessoaFisicoJuridico;
 import java.util.Date;
 
 /**

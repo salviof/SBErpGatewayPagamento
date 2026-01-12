@@ -7,7 +7,7 @@ package br.org.coletivojava.erp.gatewayPagamento.plataformas;
 import br.org.coletivojava.erp.gatewayPagamento.ItfCartaoCreditoDadosTransient;
 import br.org.coletivojava.erp.gatewayPagamento.ItfCartaoCreditoDadosTransientAntiFraude;
 import br.org.coletivojava.erp.gatewayPagamento.ItfGateWayPagamento;
-import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
+import com.super_bits.modulosSB.SBCore.modulos.erp.InfoApiERPCarameloCode;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.InfoCampos.anotacoes.InfoObjetoDaFabrica;
 import org.coletivojava.fw.utilCoreBase.UtilCRCReflexaoAPIERP;
@@ -16,7 +16,7 @@ import org.coletivojava.fw.utilCoreBase.UtilCRCReflexaoAPIERP;
  *
  * @author desenvolvedor
  */
-@ApiERPColetivoJavaFW(descricaoApi = "Gateway de Pagamento", nomeApi = "GatewayPagamento", slugInicial = "GatewayPgto")
+@InfoApiERPCarameloCode(descricaoApi = "Gateway de Pagamento", nomeApi = "GatewayPagamento", slugInicial = "GatewayPgto")
 public enum ERPGatewayPagamento implements ItfApiErpSuperBits<ItfGateWayPagamento> {
 
     @InfoObjetoDaFabrica(nomeObjeto = "Cielo", classeObjeto = PlataformaGatewayPagamento.class)
